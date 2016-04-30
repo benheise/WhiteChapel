@@ -107,9 +107,9 @@ module EnqueuePasswords
 			hashes = {}
 			hashes = generate_hashes(pass)
 			hashes.each do |type,hashhash|
-				inputone << check_unique(hashhash)
+				@inputone << check_unique(hashhash)
 			end
-			inputone.compact!
+			@inputone.compact!
 			import @inputone
 		end
 	end
